@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cream-bg);
+  color: var(--text-dark);
+}
+
+/* === Sidebar === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  background-color: #5c4033;
+  padding-top: 20px;
+  color: white;
+  transition: left 0.3s ease;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7c9a3e;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #3d2b1f;
+}
+
+/* === Main Content === */
+.main {
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #5c4033;
+}
+
+/* === Cards === */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc; /* full box line */
+  border-left: 5px solid #3CCFAD; /* accent line */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card .value {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #3a2e2a;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  color: #7c9a3e;
+  font-weight: bold;
+}
+
+/* === Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffdf7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #7c9a3e;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* === Charts Layout === */
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chart-box {
+  flex: 1 1 45%;
+  background-color: #fffdf7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.chart-box h2 {
+  margin-bottom: 10px;
+  color: var(--text-dark);
+  font-size: 18px;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 320px !important;
+}
+
+/* === Notification === */
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.notification {
+  background-color: #fef9c3;
+  color: #3a2e2a;
+  border-left: 5px solid #d4af37;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 250px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Hamburger Button === */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: #7c9a3e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px;
+    transition: left 0.3s ease;
+    flex-direction: column;
+    width: 220px;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  .sidebar h2 {
+    display: none;
+  }
+
+  .sidebar a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container,
+  .dashboard-charts {
+    flex-direction: column;
+  }
+
+  .chart-box {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .sidebar a {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* === Utilities === */
+.hidden {
+  display: none;
+}
+

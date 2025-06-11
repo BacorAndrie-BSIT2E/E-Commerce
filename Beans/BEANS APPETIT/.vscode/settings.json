@@ -1,0 +1,13 @@
+{
+    "php.debug.executablePath": "",
+    "extensions.experimental.affinity": {
+        "DEVSENSE.phptools-vscode": 1,
+        "DEVSENSE.profiler-php-vscode": 1,
+        "xdebug.php-debug": 1
+    },
+    "extensions.supportVirtualWorkspaces": {
+        "DEVSENSE.profiler-php-vscode": false,
+        "DEVSENSE.phptools-vscode": false,
+        "xdebug.php-debug": false
+    }
+}

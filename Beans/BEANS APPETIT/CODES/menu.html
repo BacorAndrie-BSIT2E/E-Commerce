@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beans Brew Coffee Shop</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="image/coffee.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search icon"></i>
+            <i class="fas fa-shopping-cart icon"></i>
+        
+        <div id="cart-container" class="cart-hidden">
+        </div>
+        </header>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Coffee is Our Passion</h1>
+        <p>Try it Today. Love it Forever.</p>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>Coffee</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="Americano.jpg" alt="Americano">
+                <h3>Americano</h3>
+                <p>Strong and rich coffee shot.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-1">Qty:</label>
+                    <input type="number" id="quantity-1" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="Machiatto.jpg" alt="Machiatto">
+                <h3>Machiatto</h3>
+                <p>Steamed milk with a shot of espresso.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-2">Qty:</label>
+                    <input type="number" id="quantity-2" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="Capuccino.jpg" alt="Capuccino">
+                <h3>Capuccino</h3>
+                <p>Flaky and buttery French pastry.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-3">Qty:</label>
+                    <input type="number" id="quantity-3" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>Dessert</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="Chocolate cake.jpg" alt="Chocolate cake">
+                <h3>Chocolate cake</h3>
+                <p>Strong and rich coffee shot.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-1">Qty:</label>
+                    <input type="number" id="quantity-1" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Croissant.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>Steamed milk with a shot of espresso.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-2">Qty:</label>
+                    <input type="number" id="quantity-2" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Egg tart.jpg" alt="Egg tart">
+                <h3>Egg tart</h3>
+                <p>Flaky and buttery French pastry.</p>
+                <p class="price" data-price="80">₱80</p>
+                <div class="item-controls">
+                    <label for="quantity-3">Qty:</label>
+                    <input type="number" id="quantity-3" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>&copy; 2025 Beans Brew Coffee Shop. All rights reserved.</p>
+</footer>
+
+</html>
+
+

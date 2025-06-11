@@ -1,0 +1,138 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: rgba(255, 248, 240, 0.95); /* Coffee cream tone */
+}
+
+.login-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.login-image {
+  flex: 1;
+  background-image: url('03bc20f7-50d8-416c-8dca-ef86abe1e9c2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff8f0;
+}
+
+.login-form h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #4b2e1e;
+}
+
+.login-form label {
+  font-weight: bold;
+  color: #6b4e3d;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #d4b89f;
+  border-radius: 5px;
+  background-color: #fffaf6;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #a97453;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #8a5a3a;
+}
+
+.signup-link {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 10px;
+}
+.signup-link a {
+  color: #a97453;
+  text-decoration: none;
+}
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(30, 18, 6, 0.7); /* dark coffee overlay */
+}
+
+.modal-content {
+  background-color: #fff8f0;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #a97453;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: #4b2e1e;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input {
+  padding: 10px;
+  border: 1px solid #d4b89f;
+  border-radius: 5px;
+  background-color: #fffaf6;
+}
+
+.signup-form button {
+  padding: 10px;
+  background-color: #a97453;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #8a5a3a;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  color: #333;
+  font-size: 1.5em;
+  cursor: pointer;
+}

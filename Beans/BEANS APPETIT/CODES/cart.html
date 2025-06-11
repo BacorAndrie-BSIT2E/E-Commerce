@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search icon"></i>
+            <i class="fas fa-shopping-cart icon" id="cart-icon"></i>
+        </div>
+
+        <div id="cart-container" class="cart-hidden">
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+    <script>
+        renderCart();
+    </script>
+</body>
+</html>
