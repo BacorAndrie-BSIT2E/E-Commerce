@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<section class="login-section">
+  <div class="login-card">
+    <div class="login-image"></div>
+    <form class="login-form">
+      <h2>Login to Your Cup</h2>
+      <label for="username">☕ Username</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+      
+      <label for="password">🔐 Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#" onclick="openSignup()">Sign Up</a></p>
+      <div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSignup()">&times;</span>
+    <h2>Create Your Coffee Account</h2>
+    <form class="signup-form">
+      <label for="newUsername">☕ Username</label>
+      <input type="text" id="newUsername" placeholder="Enter username" required>
+
+      <label for="newEmail">📧 Email</label>
+      <input type="email" id="newEmail" placeholder="Enter email" required>
+
+      <label for="newPassword">🔐 Password</label>
+      <input type="password" id="newPassword" placeholder="Create password" required>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</div>
